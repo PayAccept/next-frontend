@@ -8,7 +8,9 @@ describe('Homepage', () => {
   it('renders the Components', () => {
     render(<HomePage />);
 
-    const heading = screen.getByText(/PayAccept/i);
+    const heading = screen.getByText(
+      /Currently our website is undergoing an update. Please come back later./i
+    );
 
     expect(heading).toBeInTheDocument();
   });
